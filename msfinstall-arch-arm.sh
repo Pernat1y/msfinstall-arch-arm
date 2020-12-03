@@ -15,6 +15,7 @@ pacman -Syyu \
     ruby-bundler \
     sqlite \
     ruby-pg \
+    inetutils \
     --needed
 
 # Clone repo
