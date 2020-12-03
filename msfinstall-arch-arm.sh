@@ -23,6 +23,7 @@ cd /opt
 git clone https://github.com/rapid7/metasploit-framework.git
 cd "metasploit-framework"
 
+# Install gems
 CFLAGS+=" -I/usr/include/libxml2"
 bundle config set no-cache 'true'
 bundle config set deployment 'true'
