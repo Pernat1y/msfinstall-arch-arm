@@ -1,6 +1,11 @@
 # Metasploit Framework installer for Arch Linux ARM
 # https://github.com/Pernat1y/msfinstall-arch-arm
 
+# Check user
+if [[ "$EUID" -ne 0 ]]; then
+    echo 'Must be root. Exiting.'; exit
+fi
+
 # Install dependencies
 pacman -Syyu \
     gcc \
